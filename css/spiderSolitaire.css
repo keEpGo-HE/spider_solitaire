@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 1500px;
+}
+
+.container .nav,
+.container .nav .controlGame,
+.container .nav .otherControl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .nav .otherControl .time span,
+.container .nav .otherControl .moveCount span,
+.container .nav .otherControl .score span {
+    color: wheat;
+}
+
+.container .nav .controlGame button,
+.container .nav .controlGame select {
+    margin-top: 2px;
+    border-style: none;
+    border-radius: 7px;
+    color: green;
+    width: 75px;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.container .nav .controlGame select option {
+    color: green;
+}
+
+.container .nav .otherControl div {
+    font-size: 27px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.container .nav .controlGame button:nth-child(1),
+.container .nav .controlGame button:nth-child(2),
+.container .nav .controlGame button:nth-child(3),
+.container .nav .controlGame select,
+.container .nav .otherControl div:nth-child(1),
+.container .nav .otherControl div:nth-child(2) {
+    margin-right: 10px;
+}
+
+.container .dealCardsAndRecord {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+img {
+    user-select: none;
+}
+
+.container .dealCardsAndRecord .dealCards img {
+    position: absolute;
+    width: 100px;
+    height: 135px;
+}
+
+.container .dealCardsAndRecord .dealCards img:nth-child(2) {
+    left: 20px;
+}
+
+.container .dealCardsAndRecord .dealCards img:nth-child(3) {
+    left: 40px;
+}
+
+.container .dealCardsAndRecord .record {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .dealCardsAndRecord .record .completedCardSlot {
+    margin-left: 20px;
+    background-color: rgb(99, 193, 99);
+    width: 100px;
+    height: 135px;
+}
+
+.container .main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.container .main .cardSlot {
+    width: 100px;
+    height: 135px;
+    position: relative;
+    background-color: rgb(99, 193, 99);
+}
+
+.container .main .cardSlot img {
+    position: absolute;
+    width: 100px;
+    height: 135px;
+}
+
+.container .achievementPage {
+    z-index: 10000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5b945b;
+}
+
+.container .achievementPage table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    color: #fafafa;
+}
+
+.container .achievementPage table th,
+.container .achievementPage table td {
+    padding: 20px;
+}
+
+.container .achievementPage .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 35px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.container .ending {
+    z-index: 10000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5b945b;
+    width: 600px;
+}
+
+.container .ending .winning {
+    width: 300px;
+    height: 350px;
+}
+
+.container .ending .data {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+
+.container .ending .data .score,
+.container .ending .data .moveCount,
+.container .ending .data .time {
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+.container .ending .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 35px;
+    cursor: pointer;
+}

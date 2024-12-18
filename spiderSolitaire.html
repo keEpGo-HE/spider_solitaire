@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜘蛛纸牌</title>
+    <link rel="stylesheet" href="css/spiderSolitaire.css">
+    <script defer type="module" src="js/spiderSolitaire.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="nav">
+            <div class="controlGame">
+                <button class="newGame">新游戏</button>
+                <button class="imply">提示</button>
+                <button class="quash">撤回</button>
+                <select class="difficulty">
+                    <option selected value="1">简单模式</option>
+                    <option value="2">中等模式</option>
+                    <option value="3">困难模式</option>
+                </select>
+                <button class="achievement">成就</button>
+            </div>
+            <div class="otherControl">
+                <div class="time">
+                    <span>时间:</span>
+                    <span>00:00</span>
+                </div>
+                <div class="moveCount">
+                    <span>移动:</span>
+                    <span>0</span>
+                </div>
+                <div class="score">
+                    <span>分数:</span>
+                    <span>500</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="dealCardsAndRecord">
+            <div class="dealCards">
+                <img src="imgs/back.png" alt="">
+                <img src="imgs/back.png" alt="">
+                <img src="imgs/back.png" alt="">
+            </div>
+            <div class="record">
+                <div class="completedCardSlot"></div>
+                <div class="completedCardSlot"></div>
+                <div class="completedCardSlot"></div>
+                <div class="completedCardSlot"></div>
+                <div class="completedCardSlot"></div>
+                <div class="completedCardSlot"></div>
+                <div class="completedCardSlot"></div>
+                <div class="completedCardSlot"></div>
+            </div>
+        </section>
+
+        <main class="main">
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+            <div class="cardSlot"></div>
+        </main>
+
+        <!--    成就页面-->
+        <div class="achievementPage hidden">
+            <table>
+                <tr>
+                    <th>获取难度</th>
+                    <th>成就名称</th>
+                    <th>成就描述</th>
+                    <th>完成情况</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <img class="close" src="imgs/close.png" alt="">
+        </div>
+
+        <!--    结算页面-->
+        <div class="ending hidden">
+            <img class="winning" src="imgs/winning.jpg" alt="">
+
+            <div class="data">
+                <div class="score">
+                    <span>得分:</span>
+                    <span>0</span>
+                </div>
+                <div class="moveCount">
+                    <span>步数:</span>
+                    <span>0</span>
+                </div>
+                <div class="time">
+                    <span>时间:</span>
+                    <span>00:00</span>
+                </div>
+            </div>
+
+            <img class="close" src="imgs/close.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
